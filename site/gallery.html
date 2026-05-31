@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gallery &mdash; The JettAways</title>
+  <meta name="description" content="Photos and visuals from The JettAways — Joan Jett tribute band." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <header class="nav">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-brand">THE <span class="accent">JETT</span>AWAYS</a>
+      <button class="nav-toggle" aria-label="Toggle menu">MENU</button>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Band</a></li>
+        <li><a href="setlist.html">Setlist</a></li>
+        <li><a href="shows.html">Shows</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-intro">
+      <div class="container">
+        <h1>GALLERY</h1>
+        <p class="lead">Black and white. Red on hover. Click anything for a closer look.</p>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <h2 class="section-title">FEATURED VIDEO</h2>
+        <div class="featured-video">
+          <video controls preload="metadata" playsinline poster="assets/pink-hand-up.jpg">
+            <source src="assets/the-jettaways.mp4" type="video/mp4" />
+            Your browser doesn't support embedded video. <a href="assets/the-jettaways.mp4">Download the clip</a> instead.
+          </video>
+        </div>
+      </div>
+    </section>
+
+    <section style="padding-top: 2rem;">
+      <div class="container">
+        <h2 class="section-title">PHOTOS</h2>
+        <p style="color: var(--cream-dim); margin-bottom: 1rem;">
+          Photo placeholders below. Drop real shots into <code style="color: var(--red);">assets/gallery/</code>
+          and replace each tile's content with an <code>&lt;img&gt;</code> tag. The B&amp;W to red hover effect comes free.
+        </p>
+
+        <div class="gallery">
+          <div class="gallery-item" data-label="REHEARSAL 01">
+            <span class="placeholder">01</span>
+          </div>
+          <div class="gallery-item" data-label="REHEARSAL 02">
+            <span class="placeholder">02</span>
+          </div>
+          <div class="gallery-item" data-label="GUITAR DETAIL">
+            <span class="placeholder">03</span>
+          </div>
+          <div class="gallery-item" data-label="MIC CHECK">
+            <span class="placeholder">04</span>
+          </div>
+          <div class="gallery-item" data-label="DRUM KIT">
+            <span class="placeholder">05</span>
+          </div>
+          <div class="gallery-item" data-label="BACKSTAGE">
+            <span class="placeholder">06</span>
+          </div>
+          <div class="gallery-item" data-label="LEATHER &amp; LIPSTICK">
+            <span class="placeholder">07</span>
+          </div>
+          <div class="gallery-item" data-label="STAGE LIGHT">
+            <span class="placeholder">08</span>
+          </div>
+          <div class="gallery-item" data-label="THE BAND">
+            <img src="assets/gallery/band-brick-wall.jpg" alt="The JettAways posing in front of a brick wall" loading="lazy" />
+          </div>
+          <div class="gallery-item" data-label="ENCORE">
+            <span class="placeholder">10</span>
+          </div>
+          <div class="gallery-item" data-label="ROAD CASE">
+            <span class="placeholder">11</span>
+          </div>
+          <div class="gallery-item" data-label="SETLIST TAPED">
+            <span class="placeholder">12</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section style="background: #050505;">
+      <div class="container" style="text-align: center;">
+        <h2 class="section-title">SHOT US PLAYING?</h2>
+        <p class="lead" style="margin: 0 auto 2rem;">
+          Send your photos and video clips. If we use them, you get a credit
+          right next to the image &mdash; and our undying gratitude.
+        </p>
+        <a href="contact.html" class="btn btn-primary"><span>Send Your Shots</span></a>
+      </div>
+    </section>
+  </main>
+
+  <!-- Lightbox -->
+  <div class="lightbox" aria-hidden="true">
+    <button class="lightbox-close" aria-label="Close">&times;</button>
+    <div class="lightbox-content">PHOTO</div>
+  </div>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-brand">THE <span class="accent">JETT</span>AWAYS</div>
+      <div class="footer-socials">
+        <a href="#" aria-label="Instagram">IG</a>
+        <a href="#" aria-label="Facebook">FB</a>
+        <a href="#" aria-label="YouTube">YT</a>
+        <a href="#" aria-label="TikTok">TT</a>
+      </div>
+      <div class="footer-meta">Built with bad reputation &middot; &copy; 2026</div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
